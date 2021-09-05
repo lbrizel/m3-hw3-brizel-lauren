@@ -1,16 +1,35 @@
 @import "./variables.less";
 @import "./mixins.less";
 
- li {
-   display: inline-block;
-   text-align: left;
-   font-size: .8rem;
- }
+body {
+    font-family: 'Roboto', sans-serif;
+    color:@primary-color;
 
- .hero img {
-      width: 100%;
-      max-width: 1459px;
-      position: relative;
+  }
+
+nav {
+    background-color: @yellow;
+    ul{
+        li {
+            display: inline-block;
+            list-style-type: none;
+            font-size: @font-links;
+            color: @link-color;
+            font-weight: 500;
+            
+        }
+    }
+}
+
+nav ul li:last-child{
+    color:@heading-span-color;
+    text-transform: uppercase;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 1459px;
+    position: relative;
   }
 
 h1 img {
@@ -20,32 +39,46 @@ h1 img {
     top:7%;
   }
 
+  button {
+      font-size:@font-links;
+      color:@link-color;
+      background-color: @yellow;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 8px;
+  }
+
   .button1 {
     position: absolute;
     left: 37%;
     top: 11%;
-    width: 24%;
-    font-size: .7rem;
+
   }
 
   main img {
     width: 40%;
    
 }
-.info {
-    display: flex;
-    justify-content: space-around;
-} 
 
-.info button {
-    width: 20%;
-    height: 1%;
-    align-self: center;
+.dine-in {
+    background:@light-gray;
+
+    .info {
+        display: flex;
+        justify-content: space-around;
+    
+
+        .button3 {
+            align-self: center;
+            
+        }   
+    }
 }
 
 footer {
     display: flex;
     justify-content: center;
+    background:;
 }
 
 footer img {
