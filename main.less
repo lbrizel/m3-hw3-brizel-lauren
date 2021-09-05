@@ -4,7 +4,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     color:@primary-color;
-
   }
 
 nav {
@@ -15,8 +14,8 @@ nav {
             list-style-type: none;
             font-size: @font-links;
             color: @link-color;
-            font-weight: 500;
-            
+            font-weight: 500; 
+            padding: 1.1%;   
         }
     }
 }
@@ -31,6 +30,10 @@ nav ul li:last-child{
     max-width: 1459px;
     position: relative;
   }
+h1 {
+    font-size: @font-heading1;
+    text-transform: uppercase;
+}
 
 h1 img {
     width: 34%;
@@ -45,32 +48,26 @@ h1 img {
       background-color: @yellow;
       text-transform: uppercase;
       font-weight: 500;
-      border: 8px;
+      border-radius: 8px;
   }
 
   .button1 {
     position: absolute;
     left: 37%;
     top: 11%;
-
   }
 
   main img {
     width: 40%;
-   
 }
 
 .dine-in {
     background:@light-gray;
-
     .info {
         display: flex;
         justify-content: space-around;
-    
-
         .button3 {
-            align-self: center;
-            
+            align-self: center;   
         }   
     }
 }
@@ -78,7 +75,7 @@ h1 img {
 footer {
     display: flex;
     justify-content: center;
-    background:;
+    background:@footer-color;
 }
 
 footer img {
