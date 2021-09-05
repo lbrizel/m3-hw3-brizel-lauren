@@ -1,7 +1,12 @@
 @import "./variables.less";
 @import "./mixins.less";
 
+body, html {
+    #reset ();
+}
+
 body {
+    reset
     font-family: 'Roboto', sans-serif;
     color:@primary-color;
   }
@@ -43,12 +48,7 @@ h1 img {
   }
 
   button {
-      font-size:@font-links;
-      color:@link-color;
-      background-color: @yellow;
-      text-transform: uppercase;
-      font-weight: 500;
-      border-radius: 8px;
+      #button();
   }
 
   .button1 {
